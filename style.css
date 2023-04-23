@@ -1,19 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;900&display=swap');
 
 *{
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
 
+/*-----Section qui correspond à l'entièreté de la page d'accueil-----*/
 .home-page{
     height: 100vh;
     background: radial-gradient(rgb(139, 195, 245), #1294b8);
 }
 
+/*----------Navbar----------*/
 nav{
     color: white;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    align-items: center;
 }
 
 ul{
@@ -22,11 +27,71 @@ ul{
     list-style-type: none;
 }
 
-.brand{
-    font-size: 3em;
-}
-
 li{
-    padding: 5%;
-
+    padding: 15px;
+    font-size: 25px;
 }
+
+a{
+    text-decoration: none;
+    color: white;
+  }
+
+.brand{
+    font-weight: 900;
+    font-size: 45px;
+    padding-left: 200px;
+}
+
+.social{
+    padding-right: 200px;
+}
+/*----------Fin de navbar----------*/
+
+
+/*-----Container = grande div qui contient .email + .illustration-----*/
+.container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*.email = toute la div h1 + email + input*/
+.email{
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 900;
+    color: rgb(43, 43, 43);
+    text-align: left;
+    
+}
+
+.email, .p{
+    color: rgb(43, 43, 43);
+    text-align: left;
+    font-size: 25px;
+}
+
+.illustration{
+    width: 50%;
+    padding-top: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-illustration{
+    width: 85%;
+}
+
+input{
+    border-radius: 40px;
+}
+/*-----Fin de grande div container-----*/
