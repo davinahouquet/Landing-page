@@ -221,17 +221,29 @@ h2, p{
 /* Section avec les photos de l'équipe */
 .team-section{
     height: 100vh;
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.team-description{
+    width: 45%;
+}
+
 .team-title{
     font-size: 50px;
     text-align: center;
+}
 
+.team-text{
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(121, 121, 121);
 }
 
 .team-pictures{
@@ -239,9 +251,58 @@ h2, p{
     flex-direction: row;
 }
 
+.picture-container{
+    width: 300px;
+    height: auto;
+    margin: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 .member-picture{
     width: 300px;
     height: auto;
-    border-radius: 50%;
+    filter: grayscale(1);
 }
 
+.member-picture:hover{
+    filter: grayscale(0);
+    transition: 0.5s;
+    transform:scale(1.05)
+}
+
+.team-member{
+    margin: 50px;
+}
+
+.key-number{
+    text-align: center;
+    font-size: 30px;
+}
+
+.number-description{
+    text-align: center;
+    color: rgb(167, 167, 167);
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+.name-member{
+    text-align: center;
+}
+
+.job{
+    text-align: center;
+    color:rgb(167, 167, 167);
+}
+
+.social-container{
+    height: 100px;
+}
+
+.social-container:hover{
+    transform: scaleX(1);
+    transition: 0.5s;
+}
