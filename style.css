@@ -44,6 +44,7 @@ a:hover{
     font-weight: 900;
     font-size: 45px;
     padding-left: 250px;
+    color: white;
 }
 
 .social{
@@ -96,8 +97,10 @@ h1{
     padding: 5%;
 }
 
-form{
+.form{
+    width: 100%;
     display: inline-block;
+    justify-content: right;
 }
 
 input{
@@ -134,3 +137,71 @@ button{
 }
 
 /*-----Fin de grande div container-----*/
+
+/*----------Section product features----------*/
+.product-features-title{
+    width: 500px;
+    margin-left: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.p-product{
+    color: rgb(121, 121, 121);
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h2, p{
+    font-weight: 600;
+    color:rgb(56, 56, 56);
+}
+
+.card-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card{
+    width: 450px;
+    height: 400px;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: white;
+    background: radial-gradient(rgb(139, 195, 245), #1294b8);
+}
+
+.card:hover{
+    transform: translateY(-20px);
+    transition: 0.7s;
+}
+
+i{
+    font-size: 50px;
+}
+
+.title-card{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+.text-card{
+    text-align: center;
+    color: white;
+    margin: 10px;
+}
