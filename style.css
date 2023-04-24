@@ -265,12 +265,13 @@ h2, p{
     width: 300px;
     height: auto;
     filter: grayscale(1);
+    transition: 1s;
 }
 
 .member-picture:hover{
     filter: grayscale(0);
-    transition: 0.5s;
-    transform:scale(1.05)
+    transition: 1s;
+    transform:scale(1.07)
 }
 
 .team-member{
@@ -299,10 +300,11 @@ h2, p{
 }
 
 .social-container{
-    height: 100px;
+    font-size: 35px;
+    transition: 0.5s;
 }
 
-.social-container:hover{
-    transform: scaleX(1);
-    transition: 0.5s;
+.picture-container:hover .social-container{
+    transform: translateY(75px) translateX(55px);
+    transition: 1s;
 }
