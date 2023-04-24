@@ -139,15 +139,22 @@ button{
 /*-----Fin de grande div container-----*/
 
 /*----------Section product features----------*/
-.product-features-title{
-    width: 500px;
-    margin-left: 40%;
+.product-features{
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-features-description{
+    display: flex;
+    flex-direction: column;
+    width: 950px;
 }
 
 h2{
-    font-size: 40px;
+    font-size: 50px;
     margin-top: 20px;
     text-align: center;
 }
@@ -155,8 +162,9 @@ h2{
 .p-product{
     color: rgb(121, 121, 121);
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     text-align: center;
+    font-size: 25px;
 }
 
 h2, p{
@@ -172,8 +180,8 @@ h2, p{
 }
 
 .card{
-    width: 450px;
-    height: 400px;
+    width: 650px;
+    height: 650px;
     margin: 20px;
     padding: 10px;
     display: flex;
@@ -190,18 +198,50 @@ h2, p{
     transition: 0.7s;
 }
 
-i{
-    font-size: 50px;
+#icon-card{
+    font-size: 80px;
+    margin: 20px;
 }
 
 .title-card{
     text-align: center;
     color: white;
     font-size: 40px;
+    margin: 20px;
 }
 
 .text-card{
     text-align: center;
+    font-size: 25px;
+    font-weight: 500;
     color: white;
-    margin: 10px;
+    margin: 20px;
 }
+
+/* Section avec les photos de l'équipe */
+.team-section{
+    height: 100vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-title{
+    font-size: 50px;
+    text-align: center;
+
+}
+
+.team-pictures{
+    display: flex;
+    flex-direction: row;
+}
+
+.member-picture{
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+}
+
