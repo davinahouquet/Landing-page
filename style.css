@@ -191,6 +191,7 @@ h2, p{
     border-radius: 20px;
     color: white;
     background: radial-gradient(rgb(139, 195, 245), #1294b8);
+    transition: 0.7s;
 }
 
 .card:hover{
@@ -307,4 +308,24 @@ h2, p{
 .picture-container:hover .social-container{
     transform: translateY(75px) translateX(55px);
     transition: 1s;
+}
+
+/*--------------------- Section 4 parallaxe--------------------------- */
+.parallax{
+    height: 60vh;
+    background-image: url(./img/parallax.png); /*https://www.codeur.com/tuto/css/effet-parallaxe-css/*/
+    background-attachment: fixed; /* Fixe l'image pendant le scroll */
+    background-size: cover; /* L'image prendra 100% de l'espace, quitte à la crop */
+    background-position: center; /* Centre la position de l'image */
+    background-repeat: no-repeat; /* Empêche l'image de se répéter en fonction de la taille d'écran */
+    filter: brightness(50%);
+}
+
+.parallax-description{
+    text-align: center;
+}
+
+/*--------------------- Section 5 : le blog ---------------------------*/
+.blog{
+    height: 100vh;
 }
