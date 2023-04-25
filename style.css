@@ -270,12 +270,6 @@ h2, p{
     transition: 1s;
 }
 
-.member-picture:hover{
-    filter: grayscale(0);
-    transition: 1s;
-    transform:scale(1.07)
-}
-
 .team-member{
     margin: 40px;
 }
@@ -310,18 +304,27 @@ h2, p{
 
 /*les iônes réseaux sociaux*/
 #fb, #twi, #skype{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 35px;
     height: 35px;
     color: rgb(20, 20, 20);
     background-color: white;
     border-radius: 50%;
+    margin-bottom: 5px;
 }
 
 /*Comportement du container des réseaux quand on passe sur les photos*/
 .picture-container:hover .social-container{
-    transform: translateY(75px) translateX(55px);
+    transform: translateY(85px) translateX(60px);
     transition: 1s;
+}
+
+.picture-container:hover .member-picture{
+    filter: grayscale(0);
+    transition: 1s;
+    transform:scale(1.07)
 }
 
 /*--------------------- Section 4 parallaxe--------------------------- */
@@ -377,6 +380,11 @@ h2, p{
     height: 100vh;
 }
 
+.blog-section-description{
+    text-align: center;
+    margin: 40px;
+}
+
 .blog-container{
     display: flex;
     flex-direction: row;
@@ -387,17 +395,34 @@ h2, p{
 .blog-name-date{
     display: flex;
     flex-direction: column;
+    align-items: start;
+    color:white;
+    /* visibility: hidden; */
 }
 
 .blog-card{
-    width: 500px;
+    width: 400px;
     height: 500px;
-    margin: 50px;
+    margin: 30px;
 }
 
 .blog-image{
+    border-radius: 10px;
 }
 
 .blog-image-image{
+    border-radius: 10px;
     width: 400px;
+}
+
+.blog-image:hover{
+    background-color: rgba(0, 0, 0, 0.548);;
+}
+
+.blog-title{
+    font-weight: 600;
+}
+
+.blog-text{
+    font-weight: 400;
 }
