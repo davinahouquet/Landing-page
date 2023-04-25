@@ -82,7 +82,7 @@ a:hover{
 
 h1{
     margin-bottom: 5%;
-    font-size: 4rem;
+    font-size: 50px;
     font-weight: 900;
     color: rgb(56, 56, 56);
     text-align: left;
@@ -115,10 +115,11 @@ input{
     font-size: 90%;
 }
 
-button{
+.input-button{
+    width: 100px;
+    
     position: absolute;
-    border-radius: 5px;
-    z-index: 2;
+    border-radius: 40px;
     border: none;
     cursor: pointer;
 
@@ -180,8 +181,8 @@ h2, p{
 }
 
 .card{
-    width: 650px;
-    height: 650px;
+    width: 500px;
+    height: 500px;
     margin: 20px;
     padding: 10px;
     display: flex;
@@ -276,7 +277,7 @@ h2, p{
 }
 
 .team-member{
-    margin: 50px;
+    margin: 40px;
 }
 
 .key-number{
@@ -298,13 +299,26 @@ h2, p{
 .job{
     text-align: center;
     color:rgb(167, 167, 167);
+    margin-bottom: 60px;
 }
 
+/*Contient toutes les icônes sur les photos*/
 .social-container{
-    font-size: 35px;
+    font-size: 23px;
     transition: 0.5s;
 }
 
+/*les iônes réseaux sociaux*/
+#fb, #twi, #skype{
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    color: rgb(20, 20, 20);
+    background-color: white;
+    border-radius: 50%;
+}
+
+/*Comportement du container des réseaux quand on passe sur les photos*/
 .picture-container:hover .social-container{
     transform: translateY(75px) translateX(55px);
     transition: 1s;
@@ -314,18 +328,48 @@ h2, p{
 .parallax{
     height: 60vh;
     background-image: url(./img/parallax.png); /*https://www.codeur.com/tuto/css/effet-parallaxe-css/*/
-    background-attachment: fixed; /* Fixe l'image pendant le scroll */
-    background-size: cover; /* L'image prendra 100% de l'espace, quitte à la crop */
-    background-position: center; /* Centre la position de l'image */
-    background-repeat: no-repeat; /* Empêche l'image de se répéter en fonction de la taille d'écran */
-    filter: brightness(50%);
+    background-attachment: fixed;   /* Fixe l'image pendant le scroll */
+    background-size: cover;         /* L'image prendra 100% de l'espace, quitte à la crop */
+    background-position: center;    /* Centre la position de l'image */
+    background-repeat: no-repeat;   /* Empêche l'image de se répéter en fonction de la taille d'écran */
+    /* filter: brightness(50%); */
 }
 
+/*Inclut h2, p, bouton*/
 .parallax-description{
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-    text-align: center;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(22, 22, 22, 0.5);
+    color: rgba(255, 255, 255, 1);
+}
+
+.parallax-title{
+    color: rgba(255, 255, 255, 1);
+}
+
+.parallax-text{
+    color: rgba(255, 255, 255, 1);
+}
+
+.parallax-button{
+    width: 200px;
+    height: 70px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    color: white;
+    background: none;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.parallax-button:hover{
+    background-color: white;
+    transition: 0.5s;
 }
 
 /*--------------------- Section 5 : le blog ---------------------------*/
