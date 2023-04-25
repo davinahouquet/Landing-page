@@ -479,13 +479,34 @@ padding-top: 40px;
     display: flex;
     flex-direction: column;
     width: 40%;
+    color:rgb(56, 56, 56);
 }
 
+.left-header-pricing{
+    margin: 20px;
+    width: 500px;
+}
+
+/*Les chiffres clés*/
 .pricing-key-numbers{
     display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/*Texte descriptif en dessous des chiffres clés*/
+.key-nums-description{
+    display: flex;
+    justify-content: space-evenly;
     flex-direction: row;
 }
 
+/*Bouton du header "Learn More"*/
+.pricing-button-header{
+    text-align: center;
+}
 
 /*Titre principal*/
 .pricing-main-title{
@@ -496,7 +517,7 @@ padding-top: 40px;
 }
 
 /*Text de description de la section*/
-.pricing-text{
+.pricing-main-text{
     font-size: 20px;
     color: rgb(167, 167, 167);
     margin-left: 60px;
@@ -504,11 +525,54 @@ padding-top: 40px;
 
 /*Contient l'image*/
 .container-img-creativity{
-    width: 50%;
+    width: 40%;
     margin-right: 50px;
 }
 
 /*L'image en elle-même*/
 .creativity{
+    width: 80%;
+}
+
+/*Contient titre + text + pricing packs*/
+.pricing-container{
+    background-color: rgb(218, 218, 218);
+}
+
+/*Contient title et texte de la partie "Our Pricing"*/
+.pricing-packs-title-text{
+    width: 30%;
+    margin: 0 auto;
+}
+
+
+/*Titre de la partie "Our Pricing"*/
+.pricing-title{
+    text-align: center;
+    margin: 5px;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+/*Texte de la partie "Our Pricing"*/
+.pricing-text{
+    text-align: center;
+    color: rgb(121, 121, 121);
+}
+
+/*Contient toutes les pricing cards*/
+.pricing-packs{
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+}
+
+/*Pricing pack en lui-même*/
+.pricing-pack{
+    width: 250px;
+    height: 400px;
+    margin: 10px;
+    background-color: black;
 }
