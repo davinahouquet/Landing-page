@@ -490,7 +490,7 @@ padding-top: 40px;
 /*Les chiffres clés*/
 .pricing-key-numbers{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-direction: row;
     font-size: 20px;
     font-weight: 600;
@@ -499,7 +499,7 @@ padding-top: 40px;
 /*Texte descriptif en dessous des chiffres clés*/
 .key-nums-description{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-direction: row;
 }
 
@@ -571,8 +571,39 @@ padding-top: 40px;
 
 /*Pricing pack en lui-même*/
 .pricing-pack{
-    width: 250px;
-    height: 400px;
+    width: 350px;
+    height: 450px;
     margin: 10px;
-    background-color: black;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Nom du pack*/
+.pack-type{
+    padding: 25px;
+}
+
+/**/
+.pack-price{
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.dollar{
+    color: rgb(47, 117, 173);
+}
+
+.price{
+    color: rgb(47, 117, 173);
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.options{
+    display:flex;
+    flex-direction: column;
 }
