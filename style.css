@@ -380,11 +380,13 @@ h2, p{
     height: 100vh;
 }
 
+/*Contient h2 + p*/
 .blog-section-description{
     text-align: center;
     margin: 40px;
 }
 
+/*Contient toutes les cards*/
 .blog-container{
     display: flex;
     flex-direction: row;
@@ -392,37 +394,63 @@ h2, p{
     align-items: center;
 }
 
+/*Contient icon + nom + icon + date*/
 .blog-name-date{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    color:white;
-    /* visibility: hidden; */
+    color:rgb(255, 255, 255);
+    position: absolute;
+    top : 10px;
+    left: 10px;
+    transition: 0.5s;
+    visibility: hidden;
 }
 
+/*Contient div image + div icon nom et icon date*/
+.image-author-date{
+    display: flex;
+    position: relative;
+}
+
+/*Contenant de tous les éléments d'une card (img + icon(nom/date) + title + text)*/
 .blog-card{
     width: 400px;
     height: 500px;
     margin: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
+/*Contenant des images*/
 .blog-image{
     border-radius: 10px;
+    overflow: hidden;
 }
 
+/*Les images en elles-même*/
 .blog-image-image{
-    border-radius: 10px;
     width: 400px;
+    height: auto;
+    transition: 0.5s;
+    border-radius: 10px;
 }
 
-.blog-image:hover{
-    background-color: rgba(0, 0, 0, 0.548);;
+.blog-image-image:hover{
+    /* background-color: rgba(0, 0, 0, 0.548); */
+    filter: brightness(50%);
+    transition: 0.5s;
 }
 
+/*Le comportement de blog-name-date quand blog-image est survolé*/
+.blog-image:hover .blog-name-date{
+    visibility: visible;
+    transition: 0.5s;
+}
+
+/*Titre de la card*/
 .blog-title{
     font-weight: 600;
 }
 
+/*Text de description de la card*/
 .blog-text{
     font-weight: 400;
 }
