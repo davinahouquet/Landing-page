@@ -377,3 +377,27 @@ h2, p{
     height: 100vh;
 }
 
+.blog-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-name-date{
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-card{
+    width: 500px;
+    height: 500px;
+    margin: 50px;
+}
+
+.blog-image{
+}
+
+.blog-image-image{
+    width: 400px;
+}
