@@ -636,3 +636,29 @@ padding-top: 40px;
     font-size: 10px;
     text-align: right;
 }
+
+/*-----Section 7 : Footer ----------------------------------------*/
+.footer-section{
+    height: 50vh;
+    background-color: rgb(43, 43, 43);
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-footer{
+    color: rgb(20, 20, 20);
+}
+
+.terms-condition{
+    color: rgb(20, 20, 20);
+    text-align: center;
+}
+
+.kucra-footer{
+    color: rgb(20, 20, 20);
+    text-align: center;
+}
