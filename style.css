@@ -386,6 +386,10 @@ h2, p{
     margin: 40px;
 }
 
+.blog-main-title{
+padding-top: 40px;
+}
+
 /*Contient toutes les cards*/
 .blog-container{
     display: flex;
