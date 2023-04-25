@@ -604,19 +604,19 @@ padding-top: 40px;
 }
 
 /*---Listes---*/
+.lists-options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+}
 
 /*Première liste avec noms des options*/
 .name-options{
     display: flex;
     flex-direction: column;
     font-size: 10px;
-}
-
-.options{
     margin: 0;
-    display:flex;
-    flex-direction: column;
-    font-size: 10px;
 }
 
 #check{
@@ -633,4 +633,6 @@ padding-top: 40px;
 .option{
     display: flex;
     flex-direction: column;
+    font-size: 10px;
+    text-align: right;
 }
