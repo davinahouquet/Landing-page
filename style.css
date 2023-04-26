@@ -462,7 +462,7 @@ padding-top: 40px;
 
 /*-----Section 6 : Pricing ----------------------------------------*/
 .pricing-section{
-    height: 100vh;
+    height: auto;
 }
 
 /*Contient titre principal + p + img*/
@@ -549,7 +549,6 @@ padding-top: 40px;
 /*Titre de la partie "Our Pricing"*/
 .pricing-title{
     text-align: center;
-    margin: 5px;
     font-weight: 500;
     font-size: 40px;
 }
@@ -566,13 +565,12 @@ padding-top: 40px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 10px;
 }
 
 /*Pricing pack en lui-même*/
 .pricing-pack{
     width: 350px;
-    height: 450px;
+    height: auto;
     margin: 10px;
     background-color: white;
     border-radius: 10px;
@@ -639,8 +637,11 @@ padding-top: 40px;
 
 /*-----Section 7 : Footer ----------------------------------------*/
 .footer-section{
-    height: 50vh;
+    height: 30vh;
     background-color: rgb(43, 43, 43);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .footer-container{
@@ -649,16 +650,9 @@ padding-top: 40px;
     align-items: center;
 }
 
-.social-footer{
-    color: rgb(20, 20, 20);
-}
-
-.terms-condition{
-    color: rgb(20, 20, 20);
+.social-footer, .terms-condition, .kucra-footer{
+    color:rgb(167, 167, 167);
     text-align: center;
-}
-
-.kucra-footer{
-    color: rgb(20, 20, 20);
-    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
 }
