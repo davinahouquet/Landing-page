@@ -34,10 +34,12 @@ li{
 a{
     text-decoration: none;
     color: white;
+    transition: 0.2s;
 }
 
 a:hover{
-    color: yellow;
+    color: rgb(47, 47, 47);
+    transition: 0.2s;
 }
 
 .brand{
@@ -231,11 +233,12 @@ h2, p{
 }
 
 .team-description{
-    width: 45%;
+    width: 50%;
 }
 
 .team-title{
-    font-size: 50px;
+    font-size: 45px;
+    margin: 20px;
     text-align: center;
 }
 
@@ -501,11 +504,21 @@ padding-top: 40px;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+    margin-left: 20px;
 }
 
 /*Bouton du header "Learn More"*/
 .pricing-button-header{
     text-align: center;
+    background-color: #2a7cd3;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid black;
+    padding-top : 10px;
+    padding-bottom : 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 30px;
 }
 
 /*Titre principal*/
@@ -537,9 +550,10 @@ padding-top: 40px;
 /*Contient titre + text + pricing packs*/
 .pricing-container{
     background-color: rgb(218, 218, 218);
+    height: auto;
 }
 
-/*Contient title et texte de la partie "Our Pricing"*/
+/*Contient titre et texte de la partie "Our Pricing"*/
 .pricing-packs-title-text{
     width: 30%;
     margin: 0 auto;
@@ -550,18 +564,22 @@ padding-top: 40px;
 .pricing-title{
     text-align: center;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 35px;
+    padding-top: 15px;
 }
 
 /*Texte de la partie "Our Pricing"*/
 .pricing-text{
     text-align: center;
     color: rgb(121, 121, 121);
+    font-size: 15px;
+    padding-bottom: 20px;
 }
 
-/*Contient toutes les pricing cards*/
+/*Contient toutes les pricing packs*/
 .pricing-packs{
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -569,44 +587,60 @@ padding-top: 40px;
 
 /*Pricing pack en lui-même*/
 .pricing-pack{
-    width: 350px;
-    height: auto;
-    margin: 10px;
-    background-color: white;
-    border-radius: 10px;
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 315px;
+    padding: 0;
+    height: auto;
+    margin: 10px;
+    margin-bottom: 50px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgb(43, 43, 43);
+    transition: 0.7s;
 }
 
+.pricing-pack:hover{
+    transform: translateY(-20px);
+    transition: 0.7s;
+    box-shadow: 0px 20px 15px rgb(43, 43, 43);
+}
 /*Nom du pack*/
 .pack-type{
-    padding: 25px;
+    padding-top: 25px;
 }
 
-/**/
+/*Contient le dollar + int + /mois*/
 .pack-price{
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 0;
 }
 
+/*Symbole du dollar $*/
 .dollar{
     color: rgb(47, 117, 173);
 }
 
+/*Prix en int*/
 .price{
     color: rgb(47, 117, 173);
-    font-size: 60px;
+    font-size: 45px;
     font-weight: 300;
+    margin:0;
 }
 
 /*---Listes---*/
 .lists-options{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin: 0;
+    justify-content: center;
+    margin-bottom: 15px;
+    padding: 0;
+    margin-left: 0;
 }
 
 /*Première liste avec noms des options*/
@@ -637,7 +671,7 @@ padding-top: 40px;
 
 /*-----Section 7 : Footer ----------------------------------------*/
 .footer-section{
-    height: 30vh;
+    height: 25vh;
     background-color: rgb(43, 43, 43);
     display: flex;
     flex-direction: column;
