@@ -100,9 +100,11 @@ h1{
 }
 
 .form{
-    width: 100%;
+    width: 500px;
+    height: 60px;
     display: inline-block;
     justify-content: right;
+    position: relative;
 }
 
 input{
@@ -118,12 +120,19 @@ input{
 }
 
 .input-button{
-    width: 100px;
-    
+    width: 140px;
+    background-color: #2a7cd3;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
     position: absolute;
     border-radius: 40px;
     border: none;
     cursor: pointer;
+    position: absolute;
+    top: 42px;
+    right: 0;
+    left: 370px;
 
 }
 /*Illustration*/
@@ -454,6 +463,8 @@ padding-top: 40px;
 
 /*Titre de la card*/
 .blog-title{
+    margin-top: 10px ;
+    margin-bottom: 10px;
     font-weight: 600;
 }
 
@@ -495,8 +506,9 @@ padding-top: 40px;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
+    margin-left: -65px;
 }
 
 /*Texte descriptif en dessous des chiffres clés*/
@@ -504,7 +516,7 @@ padding-top: 40px;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    margin-left: 20px;
+    margin-left: -40px;
 }
 
 /*Bouton du header "Learn More"*/
@@ -518,7 +530,8 @@ padding-top: 40px;
     padding-bottom : 10px;
     padding-left: 25px;
     padding-right: 25px;
-    margin: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
 }
 
 /*Titre principal*/
