@@ -600,6 +600,7 @@ padding-top: 40px;
     border-radius: 10px;
     box-shadow: 0px 10px 10px rgb(43, 43, 43);
     transition: 0.7s;
+    position: relative;
 }
 
 .pricing-pack:hover{
@@ -607,6 +608,32 @@ padding-top: 40px;
     transition: 0.7s;
     box-shadow: 0px 20px 15px rgb(43, 43, 43);
 }
+
+/*Contient type advanced + promo*/
+.advanced-type-promo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* position: relative; */
+}
+
+/*Promo sur le pack Advanced*/
+.promo-pricing-pack{
+    width: 50px;
+    height: auto;
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 200;
+    position: absolute;
+    right: 0;
+    top:0;
+    background-color: #2a7cd3;
+    color: white;
+    border-radius: 0 10px 0 10px;;
+    
+}
+
 /*Nom du pack*/
 .pack-type{
     padding-top: 25px;
