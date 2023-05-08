@@ -291,7 +291,7 @@
             </div>        
                         
         </section>
-        <div class="container-update-button"><button class="update-button"><a href="http://localhost/Landing%20Page%20PDO/admin.php">Click here to update</a></button></div>
+        <div class="container-update-button"><button class="update-button"><a href="http://localhost/Landing-page/admin.php">Click here to update</a></button></div>
     <!-- Section 7 : footer -->
     <section class="footer-section">
 
