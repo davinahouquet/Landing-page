@@ -1,3 +1,7 @@
+<?php
+    require('form-functions.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <title>Landing Page</title>
+    <title>Landing Page PDO</title>
 </head>
 <body>
     <!-- Section 1 - Page d'accueil-->
@@ -39,7 +43,7 @@
         <div class="email">
             <h1>We are StartUp Creative Kucra Agency</h1>
             <p>Carefully crafted after analysing the needs of different industries and the design achieves a great balance between purpose & presentation</p>
-            <div class="form"><input type="email" placeholder="Enter your email"><button type="submit" class="input-button" action="post">SUBSCRIBE</button></div>
+            <div class="form"><input type="email" placeholder="Enter your email" class="email-input"><button type="submit" class="input-button" action="post">SUBSCRIBE</button></div>
             </div>
         </div>
         <div class="illustration">
@@ -227,101 +231,67 @@
     </section>
     <section class="pricing-section">
 
-        <div class="pricing-section-container">
-
-            <div class="princing-header">
-                <div class="pricing-main-title-text">
-                    <h3 class="pricing-main-title">We are digital creative Landing Page</h3>
-                    <p class="pricing-main-text">The difference between a successful person and others is not a lack of strenght, not a lack of knowledge, but rather a lack of will. Composed in a pseudo-Latin language which more or less pseudo-latin language corresponds.</p>
-                        
-                    <div class="left-header-pricing">
-
-                        <div class="pricing-key-numbers">
-                            <div class="pricing-key-number">4957</div>
-                            <div class="pricing-key-number">1599</div>
-                        </div>
-                        <div class="key-nums-description">
-                            <div class="pricing-key-num-description">Happy User</div>
-                            <div class="pricing-key-num-description">Complete Project</div>
-                        </div>
-                        <button class="pricing-button-header"><a href="#">Learn More</a></button>
-                    </div>
-                </div>
-                <div class="container-img-creativity">
-                    <img src="img/creativity.png" class="creativity">
-                </div>
-            </div>
-
             <div class="pricing-container">
 
                 <div class="pricing-packs-title-text">
-                    <h3 class="pricing-title">Our Pricing</h3>
+                    <h3 class="pricing-title">Our Pricing</h3
                     <p class="pricing-text">It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
                 </div>
-
-                <div class="pricing-packs">
-
-                    <div class="pricing-pack">
-                        <p class="pack-type">Starter</p>
-                        <div class="pack-price">
-                            <sup class="dollar">$</sup>
-                            <p class="price">9</p>
-                            <span>/month</span>
-                        </div>
-                        <div class="lists-options">
-                            <ul class="options">
-                                <li><div><i class="fa-regular fa-circle-check" id="check"></i>Bandwidth</div><p>1GB</p></li>
-                                <li><div><i class="fa-regular fa-circle-check" id="check"></i>Onlinespace</div><p>500MB</p></li>
-                                <li><div><i class="fa-regular fa-circle-check" id="check-red"></i>Support:No</div><p>No</p></li>
-                                <li><div><i class="fa-regular fa-circle-check" id="check"></i>Domain</div><p>1</p></li>
-                                <li><div><i class="fa-regular fa-circle-check" id="check-red"></i>Hidden Fees</div><p>No</p></li>
-                            </ul>
-                        </div>
-                        <button class="pricing-pack-button"><a href="#">Join Now</a></button>
-                    </div>
-                    <div class="pricing-pack">
-                        <div class="advanced-type-promo">
-                        <p class="pack-type">Advanced</p>
-                        <div class="promo-pricing-pack">20% sale</div></div>
-                        <div class="pack-price">
-                            <sup class="dollar">$</sup>
-                            <p class="price">19</p>
-                            <span>/month</span>
-                        </div>
-                        <div class="lists-options">
-                            <ul class="options">
-                                <li><div><i class="fa-regular fa-circle-check" id="check"></i>Bandwidth</div><p>2GB</p></li>
-                                <li><div><i class="fa-regular fa-circle-check" id="check"></i>Onlinespace</div><p>1GB</p></li>
-                                <li><div><i class="fa-regular fa-circle-check" id="check"></i>Support:No</div><p>Yes</p></li>
-                                <li><div><i class="fa-regular fa-circle-check" id="check"></i>Domain</div><p>3</p></li>
-                                <li><div><i class="fa-regular fa-circle-check" id="check"></i>Hidden Fees</div><p>No</p></li>
-                            </ul>
-                        </div>
-                        <button class="pricing-pack-button"><a href="#">Join Now</a></button>
-                    </div>
-                    <div class="pricing-pack">
-                        <p class="pack-type">Professional</p>
-                        <div class="pack-price">
-                            <sup class="dollar">$</sup>
-                            <p class="price">29</p>
-                            <span>/month</span>
-                        </div>
-                        <div class="lists-options">
-                            <ul class="options">
-                                <li><div><i class="fa-regular fa-circle-check" id="check"></i>Bandwidth</div><p>3GB</p></li>
-                                <li><div><i class="fa-regular fa-circle-check" id="check"></i>Onlinespace</div><p>2GB</p></li>
-                                <li><div><i class="fa-regular fa-circle-check" id="check"></i>Support:No</div><p>Yes</p></li>
-                                <li><div><i class="fa-regular fa-circle-check" id="check"></i>Domain</div><p>Unlimited</p></li>
-                                <li><div><i class="fa-regular fa-circle-check" id="check"></i>Hidden Fees</div><p>No</p></li>
-                            </ul>
-                        </div>
-                        <button class="pricing-pack-button"><a href="#">Join Now</a></button>
-                    </div>
-                </div>
             </div>
-        
-        </div>
-    </section>
+            <div class="container-packs">
+                <?php
+                    
+                    foreach(getAllPricings() as $pricing){
+                ?>
+                        
+                        <div class="pricing-packs">
+                         <div class="pricing-pack">
+                                <p class="pack-type"><p><?= $pricing['name'] ?></p>
+                                    <div class="pack-price">
+                                        <sup class="dollar">$</sup>
+                                        <p class="price"><?= $pricing['price'] ?></p>
+                                        <span>/month</span>
+                            </div>
+                            <div class="lists-options">
+                                <ul class="options">
+                                    <li>
+                                        <div><i class="fa-regular fa-circle-check" id="check"></i>Bandwidth</div>
+                                        <p><?= $pricing['bandwidth_gb'] ?>GB</p>
+                                    </li>
+                                    <li>
+                                        <div><i class="fa-regular fa-circle-check" id="check"></i>Onlinespace</div>
+                                        <p><?= ($pricing['onlinespace_mb'] >= 1000 ? ($pricing['onlinespace_mb'] / 1000) . ' GB' : $pricing['onlinespace_mb'] . ' MB') ?></p>
+                                    </li>
+                                    <li>
+                                        <div><i class="fa-regular fa-circle-check" id="<?= ($pricing['support_no'] == 0 ? 'check-red' : 'check') ?>"></i>Support:No</div>
+                                        <p><?= ($pricing['support_no'] == 0 ? 'No' : ($pricing['support_no'] == 1 ? 'Yes' : $pricing['support_no'])) ?></p>
+                                    </li>
+                                    <li>
+                                        <div><i class="fa-regular fa-circle-check" id="check"></i>Domain</div>
+                                        <p><?= ($pricing['domain'] ? $pricing['domain'] : 'Unlimited') ?></p>
+                                    </li>
+                                    <li>
+                                        <div><i class="fa-regular fa-circle-check" id="<?= ($pricing['hidden_fees'] == 0 ? 'check-red' : 'check') ?>"></i>Hidden Fees</div>
+                                        <p><?= ($pricing['hidden_fees'] == 0 ? 'No' : $pricing['hidden_fees']) ?></p>
+                                    </li>
+                                    <li>
+                                        <div class="sale-pricing-pack"><p><?= ($pricing['sale'] == 0 ? '' : 'SALE '.$pricing['sale']) ?></p></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <form action="db-functions.php?id=<?=$pricing['counter']+1?>" method="POST">
+                                <button name="join-now-button" type="submit" class="pricing-pack-button"><a href="db-functions.php?action=join&id=<?= $i+1 ?>">Join Now</a></button>
+                            </form>
+                        </div>
+                <?php
+                    }
+                    //Pour onlinespace: il faut insérer les données dans la BDD en unité MB sinon pas de conversion en GB              
+                    //support:no :operateur ternaire, booleen : condition 1 (ici si c'est égal à 1 = echo Yes)? condition 2 (ici si égal à 0 = echo No) https://stacklima.com/php-operateur-ternaire/#:~:text=op%C3%A9rateur%20ternaire%20%3A%20L'op%C3%A9rateur%20ternaire,code%20effectuant%20des%20op%C3%A9rations%20conditionnelles.
+                ?>
+            </div>        
+                        
+        </section>
+        <div class="container-update-button"><button class="update-button"><a href="http://localhost/Landing%20Page%20PDO/admin.php">Click here to update</a></button></div>
     <!-- Section 7 : footer -->
     <section class="footer-section">
 
