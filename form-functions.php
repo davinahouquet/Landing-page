@@ -83,16 +83,17 @@
             }
 
             case "addEmail" :
+                
                 if (isset($_POST['submit'])){
-                $email = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL);
+                $emailValue = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL);
 
                 $email = [
-                    "email" => $email
-                ];
+                    "email" => $emailValue
+                ];var_dump($email);
+                die();
                 $db = connexion();
                     
-                $sqlQuery2 = "INSERT INTO email (email)
-                            VALUES ('". $_POST["email"] ."')";
+                $sqlQuery2 = "INSERT INTO email (email) VALUES ('". $emailValue ."')";
                 $statement = $db->prepare($sqlQuery2);
                 $statement->execute();
                     
