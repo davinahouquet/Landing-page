@@ -25,24 +25,5 @@ function getAllPricings(){
 
 }
 
-// function counterPricing(){
-
-//     if(isset($_POST) && isset($_POST["submit"])){
-
-//         $db = connexion();
-//         $sqlQuery1 = 'UPDATE pricing SET counter = (counter + 1)
-//         WHERE id_pricing = :id_pricing';
-//         $pricing1 = $db->prepare($sqlQuery1);
-//         $pricing1->bindValue('id_pricing', $_POST["id_pricing"], PDO::PARAM_INT);
-//         $pricing1->execute();
-//         return $pricing1->fetchAll();
-//     }
-
-//     for($i = 0; $i > 0; $i++){
-
-//     }
-//     }
-// }
-
 ?>
 

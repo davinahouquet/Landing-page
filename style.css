@@ -642,10 +642,6 @@ li{
     border-radius: 5px;
     color: white;
     border: none;
-    padding-top : 10px;
-    padding-bottom : 10px;
-    padding-left: 90px;
-    padding-right: 90px;
     margin-bottom: 30px;
     cursor: pointer;
 }

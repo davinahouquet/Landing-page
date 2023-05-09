@@ -53,6 +53,6 @@ require('form-functions.php');
         ?>
         </div>
     </section>
-    <div class="container-update-button"><button class="get-back"><a href="http://localhost/Landing-page/">Click here to get back</a></button></div>
+    <div class="container-update-button"><button class="get-back"><a href="http://localhost/Landing-page/#pricing-section">Click here to get back</a></button></div>
 </body>
 </html>

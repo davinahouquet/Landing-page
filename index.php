@@ -23,7 +23,7 @@
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">FEATURES</a></li>
                 <li><a href="#">CLIENT</a></li>
-                <li><a href="#">PRICING</a></li>
+                <li><a href="#pricing-section">PRICING</a></li>
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#">ABOUT</a></li>
                 <li><a href="#">BLOG</a></li>
@@ -43,8 +43,15 @@
         <div class="email">
             <h1>We are StartUp Creative Kucra Agency</h1>
             <p>Carefully crafted after analysing the needs of different industries and the design achieves a great balance between purpose & presentation</p>
-            <div class="form"><input type="email" placeholder="Enter your email" class="email-input"><button type="submit" class="input-button" action="post">SUBSCRIBE</button></div>
+            
+            <!-- Add email -->
+            <div class="form">
+            <form action="form-functions.php?action=addEmail" method="POST">
+                <input type="email" name="submit" id="email" placeholder="Enter your email" required class="email-input">
+                <input type="submit" name="submit" value="SUBSCRIBE" id="subscribe" class="input-button">
+            </form>
             </div>
+
         </div>
         <div class="illustration">
             <img src="illustration.svg" alt="chat-kucra" class="image-illustration">
@@ -229,7 +236,8 @@
                 </div>
             </div>
     </section>
-    <section class="pricing-section">
+    <!-- Section 6 : Pricing -->
+    <section class="pricing-section" id="pricing-section">
 
             <div class="pricing-container">
 
@@ -259,10 +267,12 @@
                                         <p><?= $pricing['bandwidth_gb'] ?>GB</p>
                                     </li>
                                     <li>
+                                        <!-- Must insert MB values only (bc it won't convert to GB)-->
                                         <div><i class="fa-regular fa-circle-check" id="check"></i>Onlinespace</div>
                                         <p><?= ($pricing['onlinespace_mb'] >= 1000 ? ($pricing['onlinespace_mb'] / 1000) . ' GB' : $pricing['onlinespace_mb'] . ' MB') ?></p>
                                     </li>
                                     <li>
+                                        <!-- operateur ternaire, booleen : condition 1 (ici si c'est égal à 1 = echo Yes)? condition 2 (ici si égal à 0 = echo No) https://stacklima.com/php-operateur-ternaire/#:~:text=op%C3%A9rateur%20ternaire%20%3A%20L'op%C3%A9rateur%20ternaire,code%20effectuant%20des%20op%C3%A9rations%20conditionnelles. -->
                                         <div><i class="fa-regular fa-circle-check" id="<?= ($pricing['support_no'] == 0 ? 'check-red' : 'check') ?>"></i>Support:No</div>
                                         <p><?= ($pricing['support_no'] == 0 ? 'No' : ($pricing['support_no'] == 1 ? 'Yes' : $pricing['support_no'])) ?></p>
                                     </li>
@@ -279,19 +289,18 @@
                                     </li>
                                 </ul>
                             </div>
-                            <form action="db-functions.php?id=<?=$pricing['counter']+1?>" method="POST">
-                                <button name="join-now-button" type="submit" class="pricing-pack-button"><a href="db-functions.php?action=join&id=<?= $i+1 ?>">Join Now</a></button>
+                            <form action="form-functions.php?action=addPricingPack&id_pricing=<?php echo $pricing["id_pricing"]; ?>" method="POST">
+                                    <input name="submit" type="submit" class="pricing-pack-button" value="Join Now"></input>
                             </form>
                         </div>
+
                 <?php
                     }
-                    //Pour onlinespace: il faut insérer les données dans la BDD en unité MB sinon pas de conversion en GB              
-                    //support:no :operateur ternaire, booleen : condition 1 (ici si c'est égal à 1 = echo Yes)? condition 2 (ici si égal à 0 = echo No) https://stacklima.com/php-operateur-ternaire/#:~:text=op%C3%A9rateur%20ternaire%20%3A%20L'op%C3%A9rateur%20ternaire,code%20effectuant%20des%20op%C3%A9rations%20conditionnelles.
                 ?>
-            </div>        
-                        
+            </div>                                
         </section>
         <div class="container-update-button"><button class="update-button"><a href="http://localhost/Landing-page/admin.php">Click here to update</a></button></div>
+        
     <!-- Section 7 : footer -->
     <section class="footer-section">
 
