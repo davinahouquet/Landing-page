@@ -83,25 +83,23 @@
             }
 
             case "addEmail" :
+                case "addEmail":
+                    if (isset($_POST['email'])) {
+                        $emailValue = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL);
                 
-                if (isset($_POST['submit'])){
-                $emailValue = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL);
-
-                $email = [
-                    "email" => $emailValue
-                ];var_dump($email);
-                die();
-                $db = connexion();
-                    
-                $sqlQuery2 = "INSERT INTO email (email) VALUES ('". $emailValue ."')";
-                $statement = $db->prepare($sqlQuery2);
-                $statement->execute();
-                    
-            header("Location:index.php");
-            break;
+                        $db = connexion();
+                        $sqlQuery2 = "INSERT INTO email (email) VALUES (:emailValue)";
+                        $statement = $db->prepare($sqlQuery2);
+                        $statement->bindParam(':emailValue', $emailValue);
+                        $statement->execute();
+                
+                        header("Location:index.php");
+                        exit;
+                    }
+                    break;
                     //Ajouter message de confirmation
             }
-            }
+            
     }
     //https://www.php.net/manual/fr/reserved.variables.get.php
 

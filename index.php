@@ -47,7 +47,7 @@
             <!-- Add email -->
             <div class="form">
             <form action="form-functions.php?action=addEmail" method="POST">
-                <input type="email" name="submit" placeholder="Enter your email" required class="email-input">
+                <input type="email" name="email" placeholder="Enter your email" required class="email-input">
                 <input value="SUBSCRIBE" type="submit" class="input-button">
             </form>
             <!-- Ajouter message confirmation ici -->
